@@ -110,13 +110,13 @@ class PagingController<PageKeyType, ItemType>
   }
 
   /// Appends [newItems] to the beginning of previously loaded ones and replaces
-  void appendPageToTop(List<ItemType> newItems) {
+  void appendPageToTop(List<ItemType> newItems, PageKeyType? nextPageKey) {
     final previousItems = value.itemList ?? [];
     final itemList = newItems + previousItems;
     value = PagingState<PageKeyType, ItemType>(
       itemList: itemList,
       error: null,
-      nextPageKey: null,
+      nextPageKey: nextPageKey,
     );
   }
 

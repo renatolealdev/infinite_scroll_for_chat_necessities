@@ -1,6 +1,6 @@
 name: infinite_scroll_pagination
 description: "Este projeto é uma alteração do projeto original de: https://github.com/EdsonBueno/infinite_scroll_pagination"
-version: 3.2.1
+version: 3.2.2
 homepage: https://github.com/renatolealdev/infinite_scroll_for_chat_necessities
 
 environment:
